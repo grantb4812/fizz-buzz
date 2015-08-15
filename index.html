@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>FizzBuzz Challenge</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<link rel="stylesheet" href="main.css">	
+</head>
+<body>
+	<ul>
+		
+	</ul>
+
+	<script type="text/javascript">
+	$(document).ready(function(){
+		var liItem = "<li></li>"
+
+		for (var count = 1; count <= 100; count++) {
+  		if (count % 3 != 0 && count % 5 != 0) {
+    		$('ul').append(liItem).append(count);
+  		} else if (count % 3 == 0 && count % 5 == 0) {
+    		$('ul').append(liItem).append("FizzBuzz");
+  		} else if (count % 3 == 0) {
+    		$('ul').append(liItem).append("Fizz");
+  		} else if (count % 5 == 0) {
+    		$('ul').append(liItem).append("Buzz");
+  			} 
+		}
+	});
+
+	</script>
+</body>
+</html>
